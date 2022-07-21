@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --hover-color: #fff1e2;
+  --main-color: #f6eb14;
+  --second-color: #a3080c;
+  --third-color: #f5d4b7;
+  --p-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+a,
+p {
+  font-size: 1.8rem;
+  color: var(--p-color);
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+header,
+section {
+  padding: 2rem 7%;
+}
+
+/* header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.logo a {
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+  color: var(--second-color);
+}
+
+.logo span {
+  color: var(--p-color);
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+nav a {
+  padding: 0 2rem;
+}
+
+.menu {
+  font-size: 2.8rem;
+  color: var(--p-color);
+  display: none;
+}
