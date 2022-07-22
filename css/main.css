@@ -66,7 +66,7 @@ p {
 
 header,
 section {
-  padding: 2rem 7%;
+  padding: 2rem 5%;
 }
 
 /* header section */
@@ -128,6 +128,7 @@ section {
 .home {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 4rem;
   height: calc(100vh - 9rem);
   flex-wrap: wrap;
@@ -236,8 +237,8 @@ section {
 .catogery {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
   justify-content: center;
+  gap: 5rem;
   text-align: center;
   margin-top: 5rem;
 }
@@ -245,10 +246,10 @@ section {
 .menu {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: center;
+  gap: 2rem;
 }
 
 .sub-menu {
@@ -277,6 +278,133 @@ section {
 
 .sub-menu:hover > img {
   transform: scale(1.03);
+}
+
+/* promo section here */
+
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sub-promo {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--hover-color);
+  justify-content: space-between;
+  transition: all 0.4s linear;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.promo1 {
+  background-color: var(--third-color);
+}
+
+.promo2 {
+  background-color: var(--hover-color);
+}
+
+.promo3 {
+  background-color: var(--third-color);
+}
+
+.sub-promo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  max-width: 15rem;
+  transition: all 0.4s linear;
+}
+
+.sub-promo-img img {
+  width: 17rem;
+  transition: all 0.4s linear;
+}
+
+.sub-promo-info h3 {
+  font-weight: 600;
+}
+
+.sub-promo:hover > .sub-promo-img img {
+  transform: scale(1.03);
+}
+
+/* Latest menu here */
+
+.latest-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.latest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.menu-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid var(--hover-color);
+  gap: 4rem;
+  padding: 3rem 2rem;
+  transition: all 0.4s linear;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.menu-info img {
+  width: 8rem;
+  transition: all 0.4s linear;
+}
+
+.menu-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 5rem;
+}
+
+.menu-details a {
+  color: var(--second-color);
+  font-size: 1.5rem;
+}
+
+.menu-details a:hover {
+  color: var(--forth-color);
+}
+
+.menu-btn {
+  position: absolute;
+  right: 3%;
+  bottom: 4%;
+}
+
+.menu-btn a i {
+  background-color: var(--hover-color);
+  border-radius: 20%;
+  font-size: 2rem;
+  font-size: 2.3rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.menu-btn a i:hover {
+  color: var(--second-color);
 }
 
 /* media queries */
