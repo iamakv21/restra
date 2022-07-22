@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>hotGrills Restra</title>
+    <link rel="icon/image" href="images/favicon.png" />
     <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
@@ -14,21 +15,76 @@
   <body>
     <header class="header">
       <div class="logo">
-        <a href=""><i class="ri-fire-line"></i>Hot<span>Grills</span></a>
+        <a href=""><i class="ri-fire-line"></i>hot<span>Grills</span></a>
       </div>
-      <div class="menu"><i class="ri-menu-line"></i></div>
-      <nav>
-        <a href="">Home</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
         <a href="">About</a>
-        <a href="">Special</a>
         <a href="">Menu</a>
         <a href="">Blog</a>
         <a href="">Contact</a>
       </nav>
-      <a href="" class="btn">Log In</a>
+      <!-- <a href="" class="btn login">Log In</a> -->
+      <div id="nav-menu"><i class="ri-menu-line"></i></div>
     </header>
-    <main></main>
+    <main>
+      <!-- Home Section Here -->
+      <section class="home">
+        <div class="home-left">
+          <h1>hotGrill delivers</h1>
+          <p>Order your favorite food, snacks, dessert or drinks.</p>
+          <div class="home-action">
+            <a href="order.html" class="btn order">Order Now</a>
+            <a href="" class="video btn"
+              ><i class="ri-airplay-fill"></i>Watch Video</a
+            >
+          </div>
+          <div class="home-info">
+            <div class="home-info-1">
+              <img src="images/orgnica.png" alt="organic food" />
+              <h3>Organic Food</h3>
+            </div>
+            <div class="home-info-1">
+              <!-- <i class="ri-truck-line"></i> -->
+              <img src="images/delivery.png" alt="fast delivery" />
+              <h3>Fast Delivery</h3>
+            </div>
+            <div class="home-info-1">
+              <img src="images/support.png" alt="support" />
+              <h3>24/7 Support</h3>
+            </div>
+          </div>
+        </div>
+        <div class="home-right">
+          <img src="images/home.jpg" alt="home banner" />
+        </div>
+      </section>
+      <!-- category section here -->
+
+      <section class="catogery">
+        <h2>Menu Catogery</h2>
+        <div class="menu">
+          <div class="sub-menu">
+            <img src="images/fast-food.png" alt="fast food menu" />
+            <h3>Fast Food</h3>
+          </div>
+          <div class="sub-menu">
+            <img src="images/cakes.png" alt="desserts menu" />
+            <h3>Desserts</h3>
+          </div>
+          <div class="sub-menu">
+            <img src="images/food.png" alt="food menu" />
+            <h3>Food</h3>
+          </div>
+          <div class="sub-menu">
+            <img src="images/drinks.png" alt="food menu" />
+            <h3>Drinks</h3>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
