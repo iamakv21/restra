@@ -99,19 +99,21 @@ section {
   margin-right: 0.2rem;
 }
 
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav a {
+.navbar a {
   padding: 0 2rem;
   font-weight: 500;
+  transition: all 0.4s linear;
 }
 
-.login {
-  font-weight: 500;
+.navbar a:hover {
+  color: var(--second-color);
+  text-shadow: 0px 1px 2px var(--hover-color);
 }
 
 #nav-menu {
@@ -328,6 +330,9 @@ nav a {
   .sub-menu {
     padding: 3rem 5rem;
   }
+  .sub-menu img {
+    width: 10rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -337,5 +342,8 @@ nav a {
 
   .logo a {
     font-size: 3rem;
+  }
+  .sub-menu {
+    padding: 1.5rem 2rem;
   }
 }
