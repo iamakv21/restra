@@ -135,7 +135,6 @@ nav a {
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
-  flex: 1 1 45rem;
 }
 
 .home-left h1 {
@@ -209,15 +208,11 @@ nav a {
   width: 5rem;
 }
 
-.home-right {
-  text-align: center;
-  flex: 1 1 45rem;
-}
-
 .home-right img {
-  text-align: center;
+  /* text-align: center; */
   animation: bounce 3s infinite linear;
   max-width: 100%;
+  width: 65rem;
   height: auto;
 }
 
@@ -287,11 +282,7 @@ nav a {
 
 @media (max-width: 991px) {
   html {
-    font-size: 50%;
-  }
-
-  .home-right img {
-    flex: 1 1 45rem;
+    font-size: 55%;
   }
 }
 
@@ -300,8 +291,8 @@ nav a {
     font-size: 50%;
   }
 
-  .header {
-    margin-bottom: 5rem;
+  .home {
+    padding-top: 3rem;
   }
 
   #nav-menu {
@@ -328,9 +319,6 @@ nav a {
 
   .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-  .home-right img {
-    flex: 1 1 45rem;
   }
 }
 
