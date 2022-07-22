@@ -75,19 +75,17 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: var(--third-color);
+  box-shadow: 0px 3px 4px var(--hover-color);
 }
 
 .logo a {
   align-items: center;
   display: flex;
-  border: 1px solid black;
   color: var(--second-color);
   font-size: 2.7rem;
   font-family: "Fredoka One", cursive;
@@ -104,7 +102,6 @@ section {
 nav {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
   align-items: center;
 }
 
@@ -127,10 +124,8 @@ nav a {
 
 .home {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  border: 1px solid red;
   height: calc(100vh - 9rem);
   flex-wrap: wrap;
 }
@@ -140,7 +135,7 @@ nav a {
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
-  border: 1px solid red;
+  flex: 1 1 45rem;
 }
 
 .home-left h1 {
@@ -198,7 +193,7 @@ nav a {
 .home-info {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2.2rem;
   margin-top: 3rem;
 }
 
@@ -207,8 +202,6 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
-  padding: 1rem;
   gap: 1.5rem;
 }
 
@@ -217,15 +210,15 @@ nav a {
 }
 
 .home-right {
-  border: 1px solid red;
+  text-align: center;
+  flex: 1 1 45rem;
 }
 
 .home-right img {
   text-align: center;
-  width: 40rem;
-  height: 40rem;
-  border: 1px solid red;
   animation: bounce 3s infinite linear;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes bounce {
@@ -296,11 +289,19 @@ nav a {
   html {
     font-size: 50%;
   }
+
+  .home-right img {
+    flex: 1 1 45rem;
+  }
 }
 
 @media (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+
+  .header {
+    margin-bottom: 5rem;
   }
 
   #nav-menu {
@@ -327,6 +328,9 @@ nav a {
 
   .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .home-right img {
+    flex: 1 1 45rem;
   }
 }
 
